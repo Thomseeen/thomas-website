@@ -19,39 +19,38 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
-<body>
+<body onload="pageLoaded()">
   <!-- Navigation -->
-  <nav class="orange" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Thomas Wagner</a>
+  <div class="navbar-fixed">
+    <nav class="orange" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Thomas Wagner</a>
 
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger">
-        <i class="material-icons">menu</i>
-      </a>
-    </div>
-  </nav>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+  </div>
 
   <!-- Banner -->
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center orange-text text-lighten-2">
-          <span>Welcome! I'm <strong>Thomas Wagner</strong></span><br>
-          <span style="font-family: monospace, monospace; font-size: 40%; font-weight: lighter">Software Developer from Karlsruhe, Germany</span>
-        </h1>
-      </div>
+  <div id="index-banner" class="section no-pad-bot">
+    <div class="container">
+      <h1 class="header center orange-text text-lighten-2">
+        <span>Welcome! I'm <strong>Thomas Wagner</strong></span><br>
+        <span style="font-family: monospace, monospace; font-size: 40%; font-weight: lighter">Software Developer from Karlsruhe, Germany</span>
+      </h1>
     </div>
   </div>
 
@@ -60,12 +59,49 @@
     <div class="section">
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>About Me</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum
-            ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend
-            sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non
-            tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h2 class="center header text_h2">About Me</h2>
+        </div>
+
+        <div class="col s12 m4 l4">
+          <div class="center promo promo-example">
+            <h5 class="promo-caption">Profile</h5>
+            <p class="light center">
+              I'm a software developer, currently at PA-Systems GmbH & Co. KG in Karlsruhe.
+              Working for mainly the automotive industry I specialize in developing desktop
+              applications in .Net (C# and VB) while also developing firmware for embedded
+              Linux devices (mainly in C).
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4 l4">
+          <div class="center promo promo-example">
+            <img src="img/me.jpg" width="200" alt="Picture of me in black/white" style="border-radius: 50%" />
+          </div>
+        </div>
+
+        <div class="col s12 m4 l4">
+          <div class="center promo promo-example">
+            <h5 class="promo-caption">Detail</h5>
+            <table>
+              <tr>
+                <td><span class="span_h2">Name:</span></td>
+                <td>Thomas Wagner</td>
+              </tr>
+              <tr>
+                <td><span class="span_h2">Age:</span></td>
+                <td id="age">99</td>
+              </tr>
+              <tr>
+                <td><span class="span_h2">Location:</span></td>
+                <td>Karlsruhe, Germany</td>
+              </tr>
+              <tr>
+                <td><span class="span_h2">Hobbies:</span></td>
+                <td>Bikes, Drones, Games</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
 
@@ -97,7 +133,7 @@
           <h5 class="white-text">Contact</h5>
           <ul class="fa-ul">
             <li>
-              <a class="white-text" href="http://the-wagner.de">
+              <a class="white-text" href="https://the-wagner.de">
                 <i title="Home" class="fa-li fa fa-home"></i>
                 Home
               </a>
@@ -122,6 +158,29 @@
             </li>
           </ul>
         </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Hosts</h5>
+          <ul class="fa-ul">
+            <li>
+              <a class="white-text" href="ts3server://ts3.the-wagner.de">
+                <i title="Teamspeak3" class="fa-li fa fa-headphones"></i>
+                Teamspeak3
+              </a>
+            </li>
+            <li>
+              <a class="white-text" href="https://sinusbot.the-wagner.de">
+                <i title="Sinus Bot" class="fa-li fa fa-music"></i>
+                Sinus Bot
+              </a>
+            </li>
+            <li>
+              <a class="white-text" href="https://broz.the-wagner.de">
+                <i title="BroZ Website" class="fa-li fa fa-trophy"></i>
+                BroZ Website
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="footer-copyright">
@@ -133,12 +192,10 @@
     </div>
   </footer>
 
-
-  <!--  Scripts-->
+  <!--  Scripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
 </body>
 
 </html>
