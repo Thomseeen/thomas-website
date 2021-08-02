@@ -24,7 +24,7 @@
   <div class="navbar-fixed">
     <nav class="orange" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Thomas Wagner</a>
+        <a id="logo-container" href="#" class="brand-logo dark-dark-grey-text">Thomas Wagner</a>
 
         <ul class="right hide-on-med-and-down">
           <li><a href="#about">About</a></li>
@@ -32,14 +32,15 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
 
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+
         <ul id="nav-mobile" class="sidenav">
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger">
-          <i class="material-icons">menu</i>
-        </a>
       </div>
     </nav>
   </div>
@@ -59,7 +60,7 @@
     <div class="section">
       <div class="row">
         <div class="col s12 center">
-          <h2 class="center header text_h2">About Me</h2>
+          <h3 class="center header text_h2">About Me</h3>
         </div>
 
         <div class="col s12 m4 l4">
@@ -113,12 +114,117 @@
     <div class="section">
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Work</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum
-            ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend
-            sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non
-            tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h3 class="center header text_h2">Publications</h3>
+
+          <div class="col s12 m4 14">
+            <div class="card">
+              <div class="card-image">
+                <img class="activator" src="img/ba-thumbnail.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator dark-grey-text">
+                  Bachelor Thesis
+                  &nbsp
+                  <i class="fa fa-ellipsis-v fa-lg"></i>
+                </span>
+
+                <p><a target="_blank" href="pub/bachelorthesis.pdf">View PDF (de)</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title dark-grey-text">
+                  Calibration System Testautomatisierung
+                </span>
+
+                <p>
+                  To enable an engine control unit to fulfill its duty as an electronic control
+                  effectively, it has to be adapted to the vehicle type it is working in. This
+                  is achieved by adjusting parameters of generic software functions, which are
+                  used in a variety of vehicle types. The step of development this is done in
+                  is called application. Adjusting and validating these parameters requires a
+                  high-performance interface to the control unit. A tool-chain, consisting of
+                  multiple software and hardware components, provides this interface.
+                  Such a tool-chain is subject to constant changes in hard- and software. Each
+                  change requires a renewed release of the tool-chain for application. The follo
+                  wing thesis takes a look at whether the needed test based release process can
+                  be automated.
+                  Different existing release processes will be used as a base to develop a unified
+                  and automated process which then will be implemented in a common tool.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4 14">
+            <div class="card">
+              <div class="card-image">
+                <img class="activator" src="img/mprj-thumbnail.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator dark-grey-text">
+                  Master Project
+                  &nbsp
+                  <i class="fa fa-ellipsis-v fa-lg"></i>
+                </span>
+
+                <p><a target="_blank" href="pub/masterproject.pdf">View PDF (de)</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title dark-grey-text">
+                  Architekturentwicklung zur dezentralen Sensorerfassung in Industrie 4.0 Regelungssystemen
+                </span>
+
+                <p>
+                  Die Ausgangssituation dieses Projektes beschreibt den Bedarf einer Kommunikationsstruktur
+                  zur dezentralen Messwerterfassung. Genauer geht es um eine Multi-Agenten-Architektur mit
+                  der Möglichkeit zur Systemdiagnose. Die Systemdiagnose wird über Local Fault Detectoren (LFDs)
+                  und einen Global Fault Identifier (GFI) realisiert. Detectoren und Identifier (Nodes) sind
+                  räumlich getrennte Einheiten mit unabhängigen Hostsyste men, entsprechend ist eine Kommunikation
+                  über ein Bussystem mit einem geeigneten Protokoll nötig.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4 14">
+            <div class="card">
+              <div class="card-image">
+                <img class="activator" src="img/ma-thumbnail.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator dark-grey-text">
+                  Master Thesis
+                  &nbsp
+                  <i class="fa fa-ellipsis-v fa-lg"></i>
+                </span>
+
+                <p><a target="_blank" href="pub/masterthesis.pdf">View PDF (de)</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title dark-grey-text">
+                  Diagnostic and measurement aquisition for automotive test benches
+                </span>
+
+                <p>
+                  Motor vehicles are becoming more and more complex. The resulting packing
+                  density increases, which causes measuring points to be hard to reach. De
+                  mands for emission related measurements are becoming more diverse and
+                  new metrics for electrified vehicles are added. Hence, the required number
+                  of external measuring devices is increasing. This poses a challenge for test
+                  benches, where there is no space in the vehicle to acquire the additional
+                  readings.
+                  However, many of the measured values are already available in the vehicle’s
+                  board electronics and do not necessarily have to be determined by additional
+                  measuring equipment. This thesis discusses the possibility of continuously
+                  recording such readings using diagnostic protocols such as OBD and UDS.
+                  A tool chain is being designed that uses an embedded Linux system with
+                  a CAN controller for precise polling of measurement values. To control the
+                  Linux system and automate its operation, an add-in for an established auto
+                  mation software is being developed.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -129,58 +235,70 @@
   <footer id="contact" class="page-footer orange">
     <div class="container">
       <div class="row">
+
         <div class="col l3 s12">
-          <h5 class="white-text">Contact</h5>
+          <h5 class="dark-grey-text">Contact</h5>
           <ul class="fa-ul">
+
             <li>
-              <a class="white-text" href="https://the-wagner.de">
+              <a class="dark-grey-text" href="https://the-wagner.de">
                 <i title="Home" class="fa-li fa fa-home"></i>
                 Home
               </a>
             </li>
+
             <li>
-              <a class="white-text" href="mailto:thomas@the-wagner.de">
+              <a class="dark-grey-text" href="mailto:thomas@the-wagner.de">
                 <i title="Email" class="fa-li fa fa-envelope"></i>
                 Email
               </a>
             </li>
+
             <li>
-              <a class="white-text" href="https://www.xing.com/profile/Thomas_Wagner672">
+              <a class="dark-grey-text" href="https://www.xing.com/profile/Thomas_Wagner672">
                 <i title="Follow me on XING" class="fa-li fa fa-xing"></i>
                 Xing
               </a>
             </li>
+
             <li>
-              <a class="white-text" href="https://github.com/Thomseeen">
+              <a class="dark-grey-text" href="https://github.com/Thomseeen">
                 <i title="Follow me on GitHub" class="fa-li fa fa-github"></i>
                 GitHub
               </a>
             </li>
+
           </ul>
         </div>
+
         <div class="col l3 s12">
-          <h5 class="white-text">Hosts</h5>
+          <h5 class="dark-grey-text">Hosts</h5>
           <ul class="fa-ul">
+
             <li>
-              <a class="white-text" href="ts3server://ts3.the-wagner.de">
+              <a class="dark-grey-text" href="ts3server://ts3.the-wagner.de">
                 <i title="Teamspeak3" class="fa-li fa fa-headphones"></i>
                 Teamspeak3
               </a>
             </li>
+
             <li>
-              <a class="white-text" href="https://sinusbot.the-wagner.de">
+              <a class="dark-grey-text" href="https://sinusbot.the-wagner.de">
                 <i title="Sinus Bot" class="fa-li fa fa-music"></i>
                 Sinus Bot
               </a>
             </li>
+
             <li>
-              <a class="white-text" href="https://broz.the-wagner.de">
+              <a class="dark-grey-text" href="https://broz.the-wagner.de">
                 <i title="BroZ Website" class="fa-li fa fa-trophy"></i>
                 BroZ Website
               </a>
             </li>
+
           </ul>
         </div>
+
       </div>
     </div>
     <div class="footer-copyright">
